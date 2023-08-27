@@ -1,6 +1,6 @@
         @font-face {
             font-family: "Neue Montreal";
-            src: url(https://www.upwork.com/static/fonts-global/4.0.1/neue-montreal-regular.woff2) format("woff2");
+            src: url(./fonts/neue-montreal-regular.woff2) format("woff2");
             font-weight: 400;
             font-style: normal;
             font-display: swap;
@@ -8,7 +8,7 @@
 
         @font-face {
             font-family: "Neue Montreal";
-            src: url(https://www.upwork.com/static/fonts-global/4.0.1/neue-montreal-medium.woff2) format("woff2");
+            src: url(./fonts/neue-montreal-medium.woff2) format("woff2");
             font-weight: 500;
             font-style: normal;
             font-display: swap;
@@ -16,7 +16,7 @@
 
         @font-face {
             font-family: "Rza";
-            src: url(https://www.upwork.com/static/fonts-global/4.0.1/rza-regular.woff2) format("woff2");
+            src: url(./fonts/rza-regular.woff2) format("woff2");
             font-weight: 400;
             font-style: normal;
             font-display: swap;
