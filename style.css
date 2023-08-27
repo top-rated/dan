@@ -21562,8 +21562,8 @@
     
     
     .btn-sm{
-        width: 170px;
-        font-size: 16px;
+        width: 147px;
+        font-size: 14px;
         height: 28px;
         margin: 0px 0px 0px 7px;
     }
@@ -21590,12 +21590,13 @@
             padding: 6px 0px 6px;
         }
         .btn-sm{
-            width: 160px;
-            font-size: 16px;
+            width: 126px;
+            font-size: 14px;
             height: 26px;
-            margin: 5px 0px 0px;
+            margin: 5px -4px 0px;
         }
         .btn-sm p{
+            font-size: 14px;
             padding:2.5px;
         }
     }
@@ -21626,26 +21627,6 @@
         padding-top: var(--ws-sm);
       }
 
-      @media (forced-colors: active) {
-        .bottom-sheet {
-          border-top: var(--border-hc);
-        }
-      }
 
-      .bottom-sheet-container.open .bottom-sheet {
-        transform: translateY(0);
-      }
     
-    
-      .prevent-body-scroll {
-        height: 100%;
-        overflow: hidden;
-        position: relative;
-      }
-
-      .prevent-body-scroll.prevent-body-scroll-ios body {
-        overflow-x: hidden;
-        overflow-y: auto;
-        position: relative;
-      }
-    
+ 

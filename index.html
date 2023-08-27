@@ -63,7 +63,10 @@
               setInterval(updateTime, 1000);
 
               function goToPage() {
-                window.location.href = 'https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?';  }
+                const whatsappUrl = 'https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?';  
+                const newWindow = window.open(whatsappUrl, '_blank');
+                newWindow.focus();
+            }
            
                 function show() {
                     const element = document.getElementById("up-line-clamp-v2-91");
@@ -71,12 +74,14 @@
                        element.classList.toggle("clamped");
                         
                         if(element.classList.contains("up-line-clamp-v2")) {
-    document.getElementById("les").textContent = "Show"; 
-  } else {
-    document.getElementById("les").textContent = "Less";
-  }
+                        document.getElementById("les").textContent = "Show"; 
+                    } else {
+                        document.getElementById("les").textContent = "Less";
+                    }
 
-                }       
+                }    
+                
+                
            
            </script>
         <link rel="stylesheet" href="./style.css">
@@ -116,7 +121,8 @@
                                                         <!---->
                                                         <!-- <div>
                                                         <a
-                                                        href="https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?"
+                                                        href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' 
+  target="_blank" rel="noopener noreferrer"
                                                             data-v-298a5808=""
                                                             class="btn"
                                                         ><p>
@@ -156,7 +162,11 @@
                                                                                 <div class="identity-content" bis_skin_checked="1">
                                                                                     <div class="mb-5 mb-md-10 d-flex align-items-center" bis_skin_checked="1">
                                                                                         <h1 itemprop="name" role="presentation" class="d-inline vertical-align-middle m-0">
-                                                                                            Dan Burykin 🇺🇦 
+                                                                                            Dan Burykin <img src="./images/Ukrainian_flag.svg" style="
+                                                                                            width: 23px;
+                                                                                            height: 29px;
+                                                                                            margin: -4px 5px 0px -4px;
+                                                                                        ">
                                                                                         </h1>
                                                                                         <!---->
                                                                                         <span>
@@ -166,7 +176,8 @@
                                                                                                     tabindex="0"
                                                                                                     role="button"
                                                                                                     aria-describedby="popper_81"
-                                                                                                    onclick="goToPage()"
+                                                                                                    id="verif"
+
                                                                                                 >
                                                                                                     <div class="up-icon" bis_skin_checked="1">
                                                                                                         <svg
@@ -200,7 +211,6 @@
                                                             contract together.
                                                                                                                 </span>
                                                                                                             </div>
-                                                                                                            <div x-arrow="" class="arrow" bis_skin_checked="1"></div>
                                                                                                         </div>
                                                                                                     </div>
                                                                                                 </div>
@@ -268,7 +278,8 @@
 
                                                                                                 <a
 
-                                                                                                href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?'
+                                                                                                href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' 
+                                                                                                target="_blank" rel="noopener noreferrer"
                                                                                                 data-v-298a5808=""
                                                                                                 class="btn btn-sm"
                                                                                             ><p>
@@ -564,7 +575,11 @@
                                                                                     <div class="identity-content" bis_skin_checked="1">
                                                                                         <div class="mb-5 mb-md-10 d-flex align-items-center" bis_skin_checked="1">
                                                                                             <h1 itemprop="name" role="presentation" class="d-inline vertical-align-middle m-0">
-                                                                                                Dan Burykin 🇺🇦.
+                                                                                                Dan Burykin <img src="./images/Ukrainian_flag.svg" style="
+                                                                                                width: 23px;
+                                                                                                height: 29px;
+                                                                                                margin: -4px 5px 0px -4px;
+                                                                                            ">
                                                                                             </h1>
                                                                                             <!---->
                                                                                             <span>
@@ -573,7 +588,8 @@
                                                                                                         class="up-badge up-badge-tagline line-height-0 up-badge-verified up-popper-trigger"
                                                                                                         tabindex="0"
                                                                                                         role="button"
-                                                                                                        aria-describedby="popper_81"
+                                                                                                        aria-describedby="popper_811"
+                                                                                                        id="verifi"
                                                                                                     >
                                                                                                         <div class="up-icon" bis_skin_checked="1">
                                                                                                             <svg
@@ -588,7 +604,7 @@
                                                                                                     </span
                                                 >
                                                                                                 </span>
-                                                                                                <span id="popper_81" class="popper up-popover" style="display: none">
+                                                                                                <span id="popper_811" class="popper up-popover" style="display: none;">
                                                                                                     <div class="size-sm" bis_skin_checked="1">
                                                                                                         <div class="popper-wrapper" bis_skin_checked="1">
                                                                                                             <div class="popper-inner" bis_skin_checked="1">
@@ -607,7 +623,6 @@
                                                             contract together.
                                                                                                                     </span>
                                                                                                                 </div>
-                                                                                                                <div x-arrow="" class="arrow" bis_skin_checked="1"></div>
                                                                                                             </div>
                                                                                                         </div>
                                                                                                     </div>
@@ -673,7 +688,8 @@
                                                                                                         </div>
                                                                                                     </div>
                                                                                                     <a 
-                                                                                                    href="https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?"
+                                                                                                    href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' 
+  target="_blank" rel="noopener noreferrer"
                                                                                                     data-v-298a5808=""
                                                                                                     class="btn btn-sm"
                                                                                                 ><p>
@@ -924,7 +940,8 @@
                                                                                             class="up-nav-pills up-nav-stacked"
                                                                                             bis_skin_checked="1"
                                                                                         >
-                                                                                        <a href="https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?">
+                                                                                        <a href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' 
+  target="_blank" rel="noopener noreferrer">
                                                                                             <button
                                                                                                 data-v-b615fcee=""
                                                                                                 role="tab"
@@ -954,7 +971,8 @@
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </button
-                                              ></a>                                                                                        <a href="https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?">
+                                              ></a>                                                                                        <a href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' 
+  target="_blank" rel="noopener noreferrer">
 
                                                                                             <button
                                                                                                 data-v-b615fcee=""
@@ -985,7 +1003,8 @@
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </button
-                                              ></a>                                                                                        <a href="https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?">
+                                              ></a>                                                                                        <a href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' 
+  target="_blank" rel="noopener noreferrer">
 
                                                                                             <button
                                                                                                 data-v-b615fcee=""
@@ -1103,7 +1122,11 @@
                                                                             <div class="cfe-ui-profile-video-intro mt-10" bis_skin_checked="1">
                                                                                 <div class="d-flex" bis_skin_checked="1">
                                                                                     <h4 role="presentation" class="d-flex align-items-center mb-0">
-                                                                                        <span>Meet Dan Burykin 🇺🇦</span>
+                                                                                        <span>Meet Dan Burykin <img src="./images/Ukrainian_flag.svg" style="
+                                                                                            width: 23px;
+                                                                                            height: 29px;
+                                                                                            margin: -4px 5px 0px -2px;
+                                                                                        ">
                                                                                     </h4>
                                                                                     <!---->
                                                                                 </div>
@@ -1114,7 +1137,8 @@
                                                                                     class="up-thumbnail cursor-pointer mb-0 mt-10 position-relative overflow-hidden"
                                                                                     bis_skin_checked="1"
                                                                                 >
-                                                                                <a href="https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?">
+                                                                                <a href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' 
+  target="_blank" rel="noopener noreferrer">
 
                                                                                     <img
                                                                                         alt="https://youtu.be/OP_EiErIUxY"
@@ -1122,7 +1146,7 @@
                                                                                         src="https://img.youtube.com/vi/OP_EiErIUxY/maxresdefault.jpg"
                                                                                     >
                                                                                 </a>
-                                                                                    <button aria-label="Play video" class="transform-center cursor-pointer btn-play">
+                                                                                    <button aria-label="Play video" class="transform-center cursor-pointer btn-play" onclick="goToPage()">
                                                                                         <div class="video-thumbnail-play-icon up-icon lg" bis_skin_checked="1">
                                                                                             <svg
                                                                                                 xmlns="http://www.w3.org/2000/svg"
@@ -1593,7 +1617,8 @@
                                                                                     <div class="ml-20" bis_skin_checked="1">
                                                                                         <span>
                                                                                             <span>
-                                                                                                <a href="https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?">
+                                                                                                <a href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' 
+  target="_blank" rel="noopener noreferrer">
                                                                                                 <button aria-label="Copy link to clipboard" class="up-btn up-btn-default up-btn-circle up-popper-trigger" aria-describedby="popper_85">
                                                                                                     <div class="up-icon" bis_skin_checked="1">
                                                                                                         <svg
@@ -1732,7 +1757,8 @@ If you have any questions, please, feel free to send me a message, and I’ll ge
                                                                                                             </div>
                                                                                                         </div>
                                                                                                         <!---->
-                                                                                                        <a data-v-7b05d3b4="" href="https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?" class="up-n-link mb-0 mt-10 mt-md-0 text-link">
+                                                                                                        <a data-v-7b05d3b4="" href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' 
+  target="_blank" rel="noopener noreferrer" class="up-n-link mb-0 mt-10 mt-md-0 text-link">
                                                                                                             Find a time
                                                                                                         </a>
                                                                                                     </div>
@@ -2031,7 +2057,8 @@ If you have any questions, please, feel free to send me a message, and I’ll ge
                                                                                                             <!---->
                                                                                                             <div data-v-5dbdb140="" class="col" bis_skin_checked="1">
                                                                                                                 <h4 data-v-5dbdb140="" role="presentation" class="mb-20 mb-lg-10 mg">
-                                                                                                                    <a data-v-5dbdb140="" href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' class="up-n-link cursor-pointer" tabindex="0">
+                                                                                                                    <a data-v-5dbdb140="" href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' 
+  target="_blank" rel="noopener noreferrer" class="up-n-link cursor-pointer" tabindex="0">
                                                                                                                         Google Ads
                                                                                                                     </a>
                                                                                                                     <!---->
@@ -2162,7 +2189,8 @@ If you have any questions, please, feel free to send me a message, and I’ll ge
                                                                                                             <!---->
                                                                                                             <div data-v-5dbdb140="" class="col" bis_skin_checked="1">
                                                                                                                 <h4 data-v-5dbdb140="" role="presentation" class="mb-20 mb-lg-10 mg">
-                                                                                                                    <a data-v-5dbdb140="" href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' class="up-n-link cursor-pointer" tabindex="0">
+                                                                                                                    <a data-v-5dbdb140="" href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' 
+  target="_blank" rel="noopener noreferrer" class="up-n-link cursor-pointer" tabindex="0">
                                                                                                                         Google Ads
                                                             Audit/Recommendations
                                                                                                                     </a>
@@ -2289,7 +2317,8 @@ If you have any questions, please, feel free to send me a message, and I’ll ge
                                                                                                             <!---->
                                                                                                             <div data-v-5dbdb140="" class="col" bis_skin_checked="1">
                                                                                                                 <h4 data-v-5dbdb140="" role="presentation" class="mb-20 mb-lg-10 mg">
-                                                                                                                    <a data-v-5dbdb140="" href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' class="up-n-link cursor-pointer" tabindex="0">
+                                                                                                                    <a data-v-5dbdb140="" href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' 
+  target="_blank" rel="noopener noreferrer" class="up-n-link cursor-pointer" tabindex="0">
                                                                                                                         Google Ads
                                                             specialist for home
                                                             services company
@@ -2422,7 +2451,8 @@ If you have any questions, please, feel free to send me a message, and I’ll ge
                                                                                                             <!---->
                                                                                                             <div data-v-5dbdb140="" class="col" bis_skin_checked="1">
                                                                                                                 <h4 data-v-5dbdb140="" role="presentation" class="mb-20 mb-lg-10 mg">
-                                                                                                                    <a data-v-5dbdb140="" href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' class="up-n-link cursor-pointer" tabindex="0">
+                                                                                                                    <a data-v-5dbdb140="" href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' 
+  target="_blank" rel="noopener noreferrer" class="up-n-link cursor-pointer" tabindex="0">
                                                                                                                         Google Grant Ads
                                                                                                                     </a>
                                                                                                                     <!---->
@@ -2553,7 +2583,8 @@ If you have any questions, please, feel free to send me a message, and I’ll ge
                                                                                                             <!---->
                                                                                                             <div data-v-5dbdb140="" class="col" bis_skin_checked="1">
                                                                                                                 <h4 data-v-5dbdb140="" role="presentation" class="mb-20 mb-lg-10 mg">
-                                                                                                                    <a data-v-5dbdb140="" href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' class="up-n-link cursor-pointer" tabindex="0">
+                                                                                                                    <a data-v-5dbdb140="" href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' 
+  target="_blank" rel="noopener noreferrer" class="up-n-link cursor-pointer" tabindex="0">
                                                                                                                         SEO Agency Wanted to
                                                             Boost Organic
                                                             Traffic and Leads
@@ -2676,7 +2707,8 @@ If you have any questions, please, feel free to send me a message, and I’ll ge
                                                                                                             <!---->
                                                                                                             <div data-v-5dbdb140="" class="col" bis_skin_checked="1">
                                                                                                                 <h4 data-v-5dbdb140="" role="presentation" class="mb-20 mb-lg-10 mg">
-                                                                                                                    <a data-v-5dbdb140="" href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' class="up-n-link cursor-pointer" tabindex="0">
+                                                                                                                    <a data-v-5dbdb140="" href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' 
+  target="_blank" rel="noopener noreferrer" class="up-n-link cursor-pointer" tabindex="0">
                                                                                                                         Google Adwords
                                                             manager for our
                                                             Google Ads account
@@ -2804,7 +2836,8 @@ If you have any questions, please, feel free to send me a message, and I’ll ge
                                                                                                             <!---->
                                                                                                             <div data-v-5dbdb140="" class="col" bis_skin_checked="1">
                                                                                                                 <h4 data-v-5dbdb140="" role="presentation" class="mb-20 mb-lg-10 mg">
-                                                                                                                    <a data-v-5dbdb140="" href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' class="up-n-link cursor-pointer" tabindex="0">
+                                                                                                                    <a data-v-5dbdb140="" href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' 
+  target="_blank" rel="noopener noreferrer" class="up-n-link cursor-pointer" tabindex="0">
                                                                                                                         Google Ad-words
                                                             expert for eCommerce
                                                             website
@@ -2937,7 +2970,8 @@ If you have any questions, please, feel free to send me a message, and I’ll ge
                                                                                                             <!---->
                                                                                                             <div data-v-5dbdb140="" class="col" bis_skin_checked="1">
                                                                                                                 <h4 data-v-5dbdb140="" role="presentation" class="mb-20 mb-lg-10 mg">
-                                                                                                                    <a data-v-5dbdb140="" href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' class="up-n-link cursor-pointer" tabindex="0">
+                                                                                                                    <a data-v-5dbdb140="" href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' 
+  target="_blank" rel="noopener noreferrer" class="up-n-link cursor-pointer" tabindex="0">
                                                                                                                         Google AdWords
                                                             Campaign Cleanup
                                                                                                                     </a>
@@ -3057,7 +3091,8 @@ If you have any questions, please, feel free to send me a message, and I’ll ge
                                                                                                             <!---->
                                                                                                             <div data-v-5dbdb140="" class="col" bis_skin_checked="1">
                                                                                                                 <h4 data-v-5dbdb140="" role="presentation" class="mb-20 mb-lg-10 mg">
-                                                                                                                    <a data-v-5dbdb140=" "  href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' class="up-n-link cursor-pointer" tabindex="0">
+                                                                                                                    <a data-v-5dbdb140=" "  href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' 
+  target="_blank" rel="noopener noreferrer" class="up-n-link cursor-pointer" tabindex="0">
                                                                                                                         Google Shopping Ads
                                                             for Fashion Brand
                                                                                                                     </a>
@@ -3189,7 +3224,8 @@ If you have any questions, please, feel free to send me a message, and I’ll ge
                                                                                                             <!---->
                                                                                                             <div data-v-5dbdb140="" class="col" bis_skin_checked="1">
                                                                                                                 <h4 data-v-5dbdb140="" role="presentation" class="mb-20 mb-lg-10 mg">
-                                                                                                                    <a data-v-5dbdb140="" href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' class="up-n-link cursor-pointer" tabindex="0">
+                                                                                                                    <a data-v-5dbdb140="" href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' 
+  target="_blank" rel="noopener noreferrer" class="up-n-link cursor-pointer" tabindex="0">
                                                                                                                         PPC Google Keywords
                                                             specialist for
                                                             marketing strategy
@@ -3446,7 +3482,8 @@ If you have any questions, please, feel free to send me a message, and I’ll ge
                                                                                                             <!---->
                                                                                                             <div data-v-5dbdb140="" class="col" bis_skin_checked="1">
                                                                                                                 <h4 data-v-5dbdb140="" role="presentation" class="mb-20 mb-lg-10 mg">
-                                                                                                                    <a data-v-5dbdb140="" href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' class="up-n-link cursor-pointer" tabindex="0">
+                                                                                                                    <a data-v-5dbdb140="" href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' 
+  target="_blank" rel="noopener noreferrer" class="up-n-link cursor-pointer" tabindex="0">
                                                                                                                         Need a Google
                                                             Adwords specialist
                                                                                                                     </a>
@@ -3518,7 +3555,8 @@ If you have any questions, please, feel free to send me a message, and I’ll ge
                                                                                                             <!---->
                                                                                                             <div data-v-5dbdb140="" class="col" bis_skin_checked="1">
                                                                                                                 <h4 data-v-5dbdb140="" role="presentation" class="mb-20 mb-lg-10 mg">
-                                                                                                                    <a data-v-5dbdb140=""  href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' class="up-n-link cursor-pointer" tabindex="0">
+                                                                                                                    <a data-v-5dbdb140=""  href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' 
+  target="_blank" rel="noopener noreferrer" class="up-n-link cursor-pointer" tabindex="0">
                                                                                                                         Google Adwords
                                                             Campaign designer,
                                                             Manager and Advisor
@@ -3591,7 +3629,8 @@ If you have any questions, please, feel free to send me a message, and I’ll ge
                                                                                                             <!---->
                                                                                                             <div data-v-5dbdb140="" class="col" bis_skin_checked="1">
                                                                                                                 <h4 data-v-5dbdb140="" role="presentation" class="mb-20 mb-lg-10 mg">
-                                                                                                                    <a data-v-5dbdb140="" href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' class="up-n-link cursor-pointer" tabindex="0">
+                                                                                                                    <a data-v-5dbdb140="" href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' 
+  target="_blank" rel="noopener noreferrer" class="up-n-link cursor-pointer" tabindex="0">
                                                                                                                         PPC Management of
                                                             SCOA + Medzino
                                                                                                                     </a>
@@ -3663,7 +3702,8 @@ If you have any questions, please, feel free to send me a message, and I’ll ge
                                                                                                             <!---->
                                                                                                             <div data-v-5dbdb140="" class="col" bis_skin_checked="1">
                                                                                                                 <h4 data-v-5dbdb140="" role="presentation" class="mb-20 mb-lg-10 mg">
-                                                                                                                    <a data-v-5dbdb140="" href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' class="up-n-link cursor-pointer" tabindex="0">
+                                                                                                                    <a data-v-5dbdb140="" href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' 
+  target="_blank" rel="noopener noreferrer" class="up-n-link cursor-pointer" tabindex="0">
                                                                                                                         Google Ads Revisions
                                                                                                                     </a>
                                                                                                                     <!---->
@@ -3734,7 +3774,8 @@ If you have any questions, please, feel free to send me a message, and I’ll ge
                                                                                                             <!---->
                                                                                                             <div data-v-5dbdb140="" class="col" bis_skin_checked="1">
                                                                                                                 <h4 data-v-5dbdb140="" role="presentation" class="mb-20 mb-lg-10 mg">
-                                                                                                                    <a data-v-5dbdb140="" href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' class="up-n-link cursor-pointer" tabindex="0">
+                                                                                                                    <a data-v-5dbdb140="" href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' 
+  target="_blank" rel="noopener noreferrer" class="up-n-link cursor-pointer" tabindex="0">
                                                                                                                         Check and fix
                                                             ongoing google ads
                                                             campaing
@@ -3807,7 +3848,8 @@ If you have any questions, please, feel free to send me a message, and I’ll ge
                                                                                                             <!---->
                                                                                                             <div data-v-5dbdb140="" class="col" bis_skin_checked="1">
                                                                                                                 <h4 data-v-5dbdb140="" role="presentation" class="mb-20 mb-lg-10 mg">
-                                                                                                                    <a data-v-5dbdb140="" href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' class="up-n-link cursor-pointer" tabindex="0">
+                                                                                                                    <a data-v-5dbdb140="" href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' 
+  target="_blank" rel="noopener noreferrer" class="up-n-link cursor-pointer" tabindex="0">
                                                                                                                         Google Ads Expert -
                                                             Minimum 3 years of
                                                             experience
@@ -3880,7 +3922,8 @@ If you have any questions, please, feel free to send me a message, and I’ll ge
                                                                                                             <!---->
                                                                                                             <div data-v-5dbdb140="" class="col" bis_skin_checked="1">
                                                                                                                 <h4 data-v-5dbdb140="" role="presentation" class="mb-20 mb-lg-10 mg">
-                                                                                                                    <a data-v-5dbdb140="" href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' class="up-n-link cursor-pointer" tabindex="0">
+                                                                                                                    <a data-v-5dbdb140="" href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' 
+  target="_blank" rel="noopener noreferrer" class="up-n-link cursor-pointer" tabindex="0">
                                                                                                                         PPC - Google Ads
                                                             Expert Educational
                                                             Field
@@ -3953,7 +3996,8 @@ If you have any questions, please, feel free to send me a message, and I’ll ge
                                                                                                             <!---->
                                                                                                             <div data-v-5dbdb140="" class="col" bis_skin_checked="1">
                                                                                                                 <h4 data-v-5dbdb140="" role="presentation" class="mb-20 mb-lg-10 mg">
-                                                                                                                    <a data-v-5dbdb140="" href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' class="up-n-link cursor-pointer" tabindex="0">
+                                                                                                                    <a data-v-5dbdb140="" href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' 
+  target="_blank" rel="noopener noreferrer" class="up-n-link cursor-pointer" tabindex="0">
                                                                                                                         Google Ads Expert
                                                                                                                     </a>
                                                                                                                     <!---->
@@ -4024,7 +4068,8 @@ If you have any questions, please, feel free to send me a message, and I’ll ge
                                                                                                             <!---->
                                                                                                             <div data-v-5dbdb140="" class="col" bis_skin_checked="1">
                                                                                                                 <h4 data-v-5dbdb140="" role="presentation" class="mb-20 mb-lg-10 mg">
-                                                                                                                    <a data-v-5dbdb140="" href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' class="up-n-link cursor-pointer" tabindex="0">
+                                                                                                                    <a data-v-5dbdb140="" href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' 
+  target="_blank" rel="noopener noreferrer" class="up-n-link cursor-pointer" tabindex="0">
                                                                                                                         PPC Expert - Lead
                                                             Generation Required
                                                                                                                     </a>
@@ -4096,7 +4141,8 @@ If you have any questions, please, feel free to send me a message, and I’ll ge
                                                                                                             <!---->
                                                                                                             <div data-v-5dbdb140="" class="col" bis_skin_checked="1">
                                                                                                                 <h4 data-v-5dbdb140="" role="presentation" class="mb-20 mb-lg-10 mg">
-                                                                                                                    <a data-v-5dbdb140="" href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' class="up-n-link cursor-pointer" tabindex="0">
+                                                                                                                    <a data-v-5dbdb140="" href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' 
+  target="_blank" rel="noopener noreferrer" class="up-n-link cursor-pointer" tabindex="0">
                                                                                                                         Google ads
                                                             management and
                                                             scaling for
@@ -4304,7 +4350,8 @@ If you have any questions, please, feel free to send me a message, and I’ll ge
                                                                                         <!---->
                                                                                     </div>
                                                                                     <div data-v-2ab976d8="" class="project col-md-4 col-6 mb-20" bis_skin_checked="1">
-                                                                                        <a data-v-2ab976d8="" href="https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?">
+                                                                                        <a data-v-2ab976d8="" href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' 
+  target="_blank" rel="noopener noreferrer">
                                                                                             <figure data-v-2ab976d8="" class="up-thumbnail position-relative mb-10">
                                                                                                 <div data-v-2ab976d8="" class="portfolio-image-placeholder" bis_skin_checked="1">
                                                                                                     <img
@@ -4328,7 +4375,8 @@ If you have any questions, please, feel free to send me a message, and I’ll ge
                                                                                         <!---->
                                                                                     </div>
                                                                                     <div data-v-2ab976d8="" class="project col-md-4 col-6 mb-20" bis_skin_checked="1">
-                                                                                        <a data-v-2ab976d8="" href="https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?">
+                                                                                        <a data-v-2ab976d8="" href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' 
+  target="_blank" rel="noopener noreferrer">
                                                                                             <figure data-v-2ab976d8="" class="up-thumbnail position-relative mb-10">
                                                                                                 <div data-v-2ab976d8="" class="portfolio-image-placeholder" bis_skin_checked="1">
                                                                                                     <img
@@ -4353,7 +4401,8 @@ If you have any questions, please, feel free to send me a message, and I’ll ge
                                                                                         <!---->
                                                                                     </div>
                                                                                     <div data-v-2ab976d8="" class="project col-md-4 col-6 mb-20" bis_skin_checked="1">
-                                                                                        <a data-v-2ab976d8="" href="https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?">
+                                                                                        <a data-v-2ab976d8="" href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' 
+  target="_blank" rel="noopener noreferrer">
                                                                                             <figure data-v-2ab976d8="" class="up-thumbnail position-relative mb-10">
                                                                                                 <div data-v-2ab976d8="" class="portfolio-image-placeholder" bis_skin_checked="1">
                                                                                                     <img
@@ -4377,7 +4426,8 @@ If you have any questions, please, feel free to send me a message, and I’ll ge
                                                                                         <!---->
                                                                                     </div>
                                                                                     <div data-v-2ab976d8="" class="project col-md-4 col-6 mb-20 dd" bis_skin_checked="1">
-                                                                                        <a data-v-2ab976d8="" href="https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?">
+                                                                                        <a data-v-2ab976d8="" href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' 
+  target="_blank" rel="noopener noreferrer">
                                                                                             <figure data-v-2ab976d8="" class="up-thumbnail position-relative mb-10">
                                                                                                 <div data-v-2ab976d8="" class="portfolio-image-placeholder" bis_skin_checked="1">
                                                                                                     <img
@@ -5046,7 +5096,8 @@ If you have any questions, please, feel free to send me a message, and I’ll ge
                                                                                                     <div data-v-8e436fc8="" class="col-12 mt-10" bis_skin_checked="1">
                                                                                                         <div data-v-8e436fc8="" class="d-flex justify-space-between" bis_skin_checked="1">
                                                                                                             <div data-v-8e436fc8="" bis_skin_checked="1">
-                                                                                                                <a data-v-8e436fc8="" href="https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?">
+                                                                                                                <a data-v-8e436fc8="" href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' 
+  target="_blank" rel="noopener noreferrer">
                                                                                                                     View Project
                                                                                                                 </a>
                                                                                                             </div>
@@ -5114,7 +5165,8 @@ If you have any questions, please, feel free to send me a message, and I’ll ge
                                                                                                     <div data-v-8e436fc8="" class="col-12 mt-10" bis_skin_checked="1">
                                                                                                         <div data-v-8e436fc8="" class="d-flex justify-space-between" bis_skin_checked="1">
                                                                                                             <div data-v-8e436fc8="" bis_skin_checked="1">
-                                                                                                                <a data-v-8e436fc8="" href="https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?">
+                                                                                                                <a data-v-8e436fc8="" href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' 
+  target="_blank" rel="noopener noreferrer">
                                                                                                                     View Project
                                                                                                                 </a>
                                                                                                             </div>
@@ -5183,7 +5235,8 @@ If you have any questions, please, feel free to send me a message, and I’ll ge
                                                                                                     <div data-v-8e436fc8="" class="col-12 mt-10" bis_skin_checked="1">
                                                                                                         <div data-v-8e436fc8="" class="d-flex justify-space-between" bis_skin_checked="1">
                                                                                                             <div data-v-8e436fc8="" bis_skin_checked="1">
-                                                                                                                <a data-v-8e436fc8="" href="https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?">
+                                                                                                                <a data-v-8e436fc8="" href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' 
+  target="_blank" rel="noopener noreferrer">
                                                                                                                     View Project
                                                                                                                 </a>
                                                                                                             </div>
@@ -5252,7 +5305,8 @@ If you have any questions, please, feel free to send me a message, and I’ll ge
                                                                                                     <div data-v-8e436fc8="" class="col-12 mt-10" bis_skin_checked="1">
                                                                                                         <div data-v-8e436fc8="" class="d-flex justify-space-between" bis_skin_checked="1">
                                                                                                             <div data-v-8e436fc8="" bis_skin_checked="1">
-                                                                                                                <a data-v-8e436fc8="" href="https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?">
+                                                                                                                <a data-v-8e436fc8="" href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' 
+  target="_blank" rel="noopener noreferrer">
                                                                                                                     View Project
                                                                                                                 </a>
                                                                                                             </div>
@@ -5375,7 +5429,11 @@ If you have any questions, please, feel free to send me a message, and I’ll ge
                                                                         <div class="cfe-ui-profile-video-intro mt-20" bis_skin_checked="1">
                                                                             <div class="d-flex" bis_skin_checked="1">
                                                                                 <h4 role="presentation" class="d-flex align-items-center mb-0">
-                                                                                    <span>Meet Dan Burykin 🇺🇦</span>
+                                                                                    <span>Meet Dan Burykin <img src="./images/Ukrainian_flag.svg" style="
+                                                                                        width: 23px;
+                                                                                        height: 29px;
+                                                                                        margin: -4px 5px 0px -2px;
+                                                                                    ">
                                                                                 </h4>
                                                                                 <!---->
                                                                             </div>
@@ -5386,14 +5444,15 @@ If you have any questions, please, feel free to send me a message, and I’ll ge
                                                                                 class="up-thumbnail cursor-pointer mb-0 mt-10 position-relative overflow-hidden"
                                                                                 bis_skin_checked="1"
                                                                             >
-                                                                            <a href="https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?">
+                                                                            <a href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' 
+  target="_blank" rel="noopener noreferrer">
                                                                                 <img
                                                                                     alt="https://youtu.be/OP_EiErIUxY"
                                                                                     class="transform-center"
                                                                                     src="https://img.youtube.com/vi/OP_EiErIUxY/maxresdefault.jpg"
                                                                                 >
                                                                             </a>
-                                                                                <button aria-label="Play video" class="transform-center cursor-pointer btn-play">
+                                                                                <button aria-label="Play video" class="transform-center cursor-pointer btn-play" onclick="goToPage()">
                                                                                     <div class="video-thumbnail-play-icon up-icon lg" bis_skin_checked="1">
                                                                                         <svg
                                                                                             xmlns="http://www.w3.org/2000/svg"
@@ -5609,7 +5668,8 @@ If you have any questions, please, feel free to send me a message, and I’ll ge
                                                                         <div class="d-flex mt-10" bis_skin_checked="1">
                                                                             <img src="./images/org-logo.jpg" alt="Top-Rated Team 🇺🇦" class="up-avatar up-avatar-company up-avatar-40">
                                                                             <div class="ml-10" bis_skin_checked="1">
-                                                                                <a href="https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?" class="up-n-link d-flex">
+                                                                                <a href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' 
+  target="_blank" rel="noopener noreferrer" class="up-n-link d-flex">
                                                                                     <span>Top-Rated Team 🇺🇦</span>
                                                                                     <!---->
                                                                                 </a>
@@ -5721,7 +5781,8 @@ If you have any questions, please, feel free to send me a message, and I’ll ge
                                                                                         <button aria-controls="toggle-4557" class="up-btn up-btn-sm up-btn-link m-0 p-0 text-muted">
                                                                                             <span style="display: none">Hide description
                                                                                             </span
-                                              >                             <a href="https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?">
+                                              >                             <a href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' 
+  target="_blank" rel="noopener noreferrer">
                                                                                             <span>Show description
                                                                                             </span
                                               > </a>
@@ -5781,7 +5842,8 @@ If you have any questions, please, feel free to send me a message, and I’ll ge
                                                                                         <button aria-controls="toggle-4562" class="up-btn up-btn-sm up-btn-link m-0 p-0 text-muted">
                                                                                             <span style="display: none">Hide description
                                                                                             </span
-                                              ><a href="https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?">
+                                              ><a href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' 
+  target="_blank" rel="noopener noreferrer">
                                                                                             <span>Show description
                                                                                             </span
                                               > </a>
@@ -5841,7 +5903,8 @@ If you have any questions, please, feel free to send me a message, and I’ll ge
                                                                                         <button aria-controls="toggle-4567" class="up-btn up-btn-sm up-btn-link m-0 p-0 text-muted">
                                                                                             <span style="display: none">Hide description
                                                                                             </span
-                                              ><a href="https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?">
+                                              ><a href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' 
+  target="_blank" rel="noopener noreferrer">
                                                                                             <span>Show description
                                                                                             </span
                                               ></a>
@@ -5902,7 +5965,8 @@ If you have any questions, please, feel free to send me a message, and I’ll ge
                                                                                         <button aria-controls="toggle-4572" class="up-btn up-btn-sm up-btn-link m-0 p-0 text-muted">
                                                                                             <span style="display: none">Hide description
                                                                                             </span
-                                              ><a href="https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?">
+                                              ><a href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' 
+  target="_blank" rel="noopener noreferrer">
                                                                                             <span>Show description
                                                                                             </span
                                               >     </a>
@@ -5963,7 +6027,8 @@ If you have any questions, please, feel free to send me a message, and I’ll ge
                                                                                         <button aria-controls="toggle-4577" class="up-btn up-btn-sm up-btn-link m-0 p-0 text-muted">
                                                                                             <span style="display: none">Hide description
                                                                                             </span
-                                              ><a href="https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?">
+                                              ><a href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' 
+  target="_blank" rel="noopener noreferrer">
                                                                                             <span>Show description
                                                                                             </span
                                               ></a>
@@ -6163,7 +6228,8 @@ If you have any questions, please, feel free to send me a message, and I’ll ge
                                                                                         <button aria-controls="toggle-4582" class="up-btn up-btn-sm up-btn-link m-0 p-0 text-muted">
                                                                                             <span style="display: none">Hide description
                                                                                             </span
-                                              ><a href="https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?">
+                                              ><a href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' 
+  target="_blank" rel="noopener noreferrer">
                                                                                             <span>Show description
                                                                                             </span
                                               > </a>
@@ -6342,7 +6408,8 @@ If you have any questions, please, feel free to send me a message, and I’ll ge
                         </div>
                     </div>
 
-                    <a href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?'
+                    <a href='https://api.whatsapp.com/send/?phone=380661752602&text=Hi!+May+I+know+more+about+your+Google+Ads+expertise?' 
+  target="_blank" rel="noopener noreferrer"
                     data-v-298a5808=""
                     class="btn bt"
                 ><p>
@@ -6353,7 +6420,39 @@ If you have any questions, please, feel free to send me a message, and I’ll ge
                 </div>
             </div>
         </div>
-       
+
+
+
+
+        
+       <script>
+        // Get the element you want to hide on hover
+                const sh = document.getElementById('popper_81');
+                const shk = document.getElementById('popper_811');
+                const el = document.getElementById('verif');
+                const elk = document.getElementById('verifi');
+
+
+                // Function to handle mouseenter event 
+                function handleMouseEnter() {
+                    sh.style.display = '';
+                    shk.style.display = '';
+
+                }
+
+                // Function to handle mouseleave event
+                function handleMouseLeave() {
+                sh.style.display = 'none'; // Remove inline style
+                shk.style.display = 'none'; // Remove inline style
+
+                }
+
+                // Add event listeners
+                el.addEventListener('mouseenter', handleMouseEnter); 
+                el.addEventListener('mouseleave', handleMouseLeave);
+                elk.addEventListener('mouseenter', handleMouseEnter); 
+                elk.addEventListener('mouseleave', handleMouseLeave);
+       </script>
     </body>
     
 </html>
