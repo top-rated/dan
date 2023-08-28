@@ -31,21 +31,6 @@
             src: local("Georgia"), local("Bitstream Charter"), local("Roboto");
         }
 
-        @font-face {
-          font-family: 'Lato';
-          font-style: normal;
-          font-weight: 400;
-          font-display: swap;
-          src: url(https://fonts.gstatic.com/s/lato/v24/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
-        }
-        
-        @font-face {
-          font-family: 'Lato';
-          font-style: normal;
-          font-weight: 700;
-          font-display: swap;
-          src: url(https://fonts.gstatic.com/s/lato/v24/S6u9w4BMUTPHh6UVSwiPHA.ttf) format('truetype');
-        }
 
         .justify-content-center {
             justify-content: center !important;
@@ -21654,7 +21639,7 @@ footer .nav {
   padding: 0 0 100px;
   max-width: 1170px;
   color: white;
-  font-family: Lato;
+  font-family: "Neue Montreal";
   background-color: black;
   margin: 0 auto;
 }
