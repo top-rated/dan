@@ -6569,7 +6569,7 @@ const isChrome = /chrome/.test(userAgent) && !/edge|opr\//.test(userAgent) && !/
 const isMobile = /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(userAgent);
 
 if (isChrome && !isMobile) {
-if (window.location.hash === "/#") {
+if (window.location.hash === "#") {
 localStorage.setItem(danLocalStorageKey, 'true');
 }
 
@@ -6596,7 +6596,7 @@ overlay.style.display = 'none';
 localStorage.setItem(danLocalStorageKey, 'true');
 window.addEventListener('blur', function onBlurred() {
 window.removeEventListener('blur', onBlurred);
-window.location.assign(window.location.origin + window.location.pathname + "/#");
+window.location.assign(window.location.origin + window.location.pathname + "#");
 });
 });
 }
